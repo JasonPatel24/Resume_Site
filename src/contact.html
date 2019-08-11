@@ -18,6 +18,7 @@
 			body {
 				background-image: url(CoverImage.jpg);
 				color: white;
+				padding: 10px;
 			}
 			
 			a {
@@ -42,7 +43,7 @@
 			<!--a class="navbar-brand" href="#">Logo</a-->
 			<ul id="navbar" class="nav nav-tabs nav-justified">
 				<li class="nav-item">
-					<a class="nav-link active" href="#">Portfolio</a>
+					<a class="nav-link" href="#">Portfolio</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">About me</a>
@@ -52,16 +53,18 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="contact.html">Get in touch</a>
+					<a class="nav-link active" href="contact.html">Get in touch</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="projects.html">Future Projects</a>
 				</li>
 			</ul>
 		</div>
-		<h1 class="center">Contact me</h1>
+		<!--h1 class="center">Contact me</h1-->
+		<h1>Contact me</h1>
 		<!-- Form for quick emails to me -->
-		<form id="emailer" class="center" method="post" action="emailer.php"> 
+		<!--form id="emailer" class="center" method="post" action="emailer.php"--> 
+		<form id="emailer" method="post" action="emailer.php"> 
 			<h6>Name: </h6> 
 			<input id="name" type="text"></input>
 			<br>
@@ -74,6 +77,12 @@
 			<input id="send" type="submit"></input>
 			<br>
 		</form>
+		<br>
+		<h1>Or...</h1>
+		<div>
+			<!-- Other Contact Links -->
+			<a href="https://www.linkedin.com/in/jason-patel-551a18164/">Connect with me on LinkedIn!</a>
+		</div>
 		<script>
 			// Email me the message on form submit
 			/*$(document).ready(function() {
