@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		
+		<meta charset="utf-8">
+			
+		<style>
+			body {
+				background-image: url(CoverImage.jpg);
+				color: white;
+			}
+			
+			a {
+				color: white;
+			}
+			
+			.center {
+				margin: auto;
+				width: 50%;
+				padding-top: 50px;
+				padding-left: 200px;
+				justify-content: center;
+				color: white;
+			}
+		</style>
+		
+		<title>Get in touch with me!</title>
+	</head>
+	<body>
+		<div id="navbarContainer">
+			<!-- Is a logo necessary? Maybe my LinkedIn pic?-->
+			<!--a class="navbar-brand" href="#">Logo</a-->
+			<ul id="navbar" class="nav nav-tabs nav-justified">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Portfolio</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">About me</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="resume.html">Resume</a>
+						<a class="dropdown-item" href="bio.html">Bio</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Get in touch</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="projects.html">Future Projects</a>
+				</li>
+			</ul>
+		</div>
+		<h1 class="center">Contact me</h1>
+		<!-- Form for quick emails to me -->
+		<form id="emailer" class="center" method="post" action="emailer.php"> 
+			<h6>Name: </h6> 
+			<input id="name" type="text"></input>
+			<br>
+			<h6>Email: </h6>
+			<input id="email" name="address" type="text"></input>
+			<br>
+			<h6>Message: </h6>
+			<textarea id="message" name="message" rows="5" cols="40"></textarea>
+			<br>
+			<input id="send" type="submit"></input>
+			<br>
+		</form>
+		<script>
+			// Email me the message on form submit
+			/*$(document).ready(function() {
+				console.log("JQuery online!");
+				$("#send").on("click", function(e) {
+					e.preventDefault(); // Prevent re-direct
+					email();
+					window.alert("Message sent!");
+					//console.log("Submit!");
+				});
+			});
+			
+			function email(/*name, address, message*///) {
+				/* 
+				   - Have an email that the site uses to send emails
+				   - Compose an email with the message and indicating the name and address for replying
+						- Going to need to send the args to a PHP file...
+				   - Send that email to me (my email address)
+				*/
+				/*window.open("mailto:jasonpatel24@gmail.com");
+			}*/
+		</script>
+	</body>
+</HTML>
