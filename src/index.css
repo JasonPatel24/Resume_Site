@@ -1,0 +1,16 @@
+body {
+    background-image: url(CoverImage.jpg);
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #3498eb;
+}
